@@ -21,7 +21,7 @@ pipeline {
             steps{
                 script{
                    sh 'docker login -u ankitr985 -p Ankit@1996'
-                   sh 'docker push ankit/devops-integration'
+                   sh 'docker push ankitr985/devops-integration'
      
                }
             }
