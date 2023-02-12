@@ -13,6 +13,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
+                    sudo chmod 666 /var/run/docker.sock
                     sh 'docker build -t ankit/devops-integration .'
                 }
             }
