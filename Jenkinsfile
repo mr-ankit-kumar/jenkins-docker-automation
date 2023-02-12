@@ -13,7 +13,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t ankit/devops-integration .'
+                    sh 'docker build -t devops-integration .'
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline {
             steps{
                 script{
                    sh 'docker login -u ankitr985 -p Ankit@1996 docker.io'
-                   sh 'docker push ankit/devops-integration'
+                   sh 'docker push ankitr985/devops-integration'
      
                }
             }
